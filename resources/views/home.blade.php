@@ -415,27 +415,56 @@
             box-shadow: 0 5px 15px rgba(36, 21, 113, 0.3);
         }
 
-        /* Footer */
+        /* Footer - Updated to match home page color scheme */
         .footer {
-            background: #1f2937;
-            color: #9ca3af;
+            background: #F7F3E8;
+            color: #000;
             padding: 3rem 2rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="stars" patternUnits="userSpaceOnUse" width="100" height="100"><circle cx="25" cy="25" r="1" fill="%23ffd700" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="%23ffd700" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="%23ffffff" opacity="0.05"/><circle cx="10" cy="60" r="0.5" fill="%23ffffff" opacity="0.05"/><circle cx="90" cy="40" r="0.5" fill="%23ffffff" opacity="0.05"/></pattern></defs><rect width="100" height="100" fill="url(%23stars)"/></svg>') repeat;
+            z-index: 1;
         }
 
         .footer-content {
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 3rem;
+            position: relative;
+            z-index: 2;
         }
 
         .footer-section h3 {
-            color: #2d7c47;
+            color: #ffd700;
             font-size: 1.4rem;
             font-weight: 700;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             letter-spacing: 0.5px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            font-family: 'Quando', serif;
+            position: relative;
+        }
+
+        .footer-section h3::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: #ffd700;
+            border-radius: 1px;
         }
 
         .footer-section ul {
@@ -443,17 +472,38 @@
         }
 
         .footer-section ul li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.8rem;
+            transition: all 0.3s ease;
+        }
+
+        .footer-section ul li:hover {
+            transform: translateX(5px);
         }
 
         .footer-section ul li a {
-            color: #9ca3af;
+            color: #000;
             text-decoration: none;
-            transition: color 0.3s;
+            transition: all 0.3s;
+            font-weight: 400;
+            position: relative;
+        }
+
+        .footer-section ul li a::before {
+            content: '▸';
+            position: absolute;
+            left: -15px;
+            color: #000;
+            opacity: 0;
+            transition: opacity 0.3s ease;
         }
 
         .footer-section ul li a:hover {
-            color: #2d7c47;
+            color: #ffd700;
+            padding-left: 15px;
+        }
+
+        .footer-section ul li a:hover::before {
+            opacity: 1;
         }
 
         .company-info {
@@ -461,8 +511,10 @@
         }
 
         .company-info p {
-            margin-bottom: 0.5rem;
-            font-size: 0.9rem;
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+            color: #d1d5db;
+            line-height: 1.6;
         }
 
         .contact-info {
@@ -470,45 +522,78 @@
         }
 
         .contact-info p {
-            margin-bottom: 0.5rem;
-            color: #9ca3af;
+            margin-bottom: 0.8rem;
+            color: #d1d5db;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-info p strong {
+            color: #ffd700;
+            font-weight: 600;
+        }
+
+        .contact-info p a {
+            color: #d1d5db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info p a:hover {
+            color: #ffd700;
         }
 
         .social-links {
             display: flex;
             gap: 1rem;
+            margin-top: 1rem;
         }
 
         .social-links a {
             display: inline-block;
-            width: 40px;
-            height: 40px;
-            background: #374151;
-            border-radius: 6px;
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #9ca3af;
-            transition: all 0.3s;
+            color: #d1d5db;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 215, 0, 0.2);
         }
 
         .social-links a:hover {
-            background: #2d7c47;
-            color: white;
+            background: #000;
+            color: #241571;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3);
         }
 
         .footer-bottom {
             max-width: 1200px;
             margin: 2rem auto 0;
             padding-top: 2rem;
-            border-top: 1px solid #374151;
+            border-top: 1px solid rgba(255, 215, 0, 0.2);
             text-align: center;
             font-size: 0.9rem;
+            color: #d1d5db;
+            position: relative;
+            z-index: 2;
         }
 
         .footer-bottom a {
-            color: #2d7c47;
+            color: #000;
             text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .footer-bottom a:hover {
+            color: white;
         }
 
         .mobile-menu-toggle {
@@ -573,6 +658,7 @@
             .footer-content {
                 grid-template-columns: 1fr;
                 text-align: center;
+                gap: 2rem;
             }
 
             .services-header h2 {
@@ -593,6 +679,10 @@
             
             .hero-subtitle {
                 font-size: 1.1rem;
+            }
+
+            .footer {
+                padding: 2rem 1rem 1rem;
             }
         }
 
@@ -615,6 +705,15 @@
 
             .nav-menu-container {
                 margin-left: 1cm;
+            }
+
+            .footer-content {
+                gap: 1.5rem;
+            }
+
+            .social-links a {
+                width: 40px;
+                height: 40px;
             }
         }
     </style>
@@ -791,22 +890,16 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Company</h3>
+                <h3 style="color:#000;">Company</h3>
                 <div class="company-info">
-                    <p><strong>INA Group</strong></p>
-                    <p>Connecting hearts, creating moments</p>
-                    <p>Your trusted partner for matrimonial services, event planning, and more.</p>
+                    <p style="color:#000;"><strong>INA Group</strong></p>
+                    <p style="color:#000;">Connecting hearts, creating moments</p>
+                    <p style="color:#000;">Your trusted partner for matrimonial services, event planning, and more.</p>
                 </div>
-                <ul>
-                    <li><a href="/about">About Us</a></li>
-                    <li><a href="/careers">Careers</a></li>
-                    <li><a href="/privacy">Privacy Policy</a></li>
-                    <li><a href="/terms">Terms of Service</a></li>
-                </ul>
             </div>
 
             <div class="footer-section">
-                <h3>Services</h3>
+                <h3 style="color:#000;">Services</h3>
                 <ul>
                     <li><a href="/services">INA Matrimony</a></li>
                     <li><a href="/services">Event Planning</a></li>
@@ -818,11 +911,12 @@
             </div>
 
             <div class="footer-section">
-                <h3>Contact</h3>
+                <h3 style="color:#000;">Contact</h3>
                 <div class="contact-info">
-                    <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
-                    <p><strong>Email:</strong> info@inagroup.com</p>
-                    <p><strong>Address:</strong> Kerala, India</p>
+                    <p style="color:#000;"><strong style="color:#000;">Phone:</strong> <a href="tel:+918086000884" style="color:#000;">+91-8086000884</a></p>
+                    <p style="color:#000;"><strong style="color:#000;">Email:</strong> <a href="mailto:info@inamatrimony.com" style="color:#000;">info@inamatrimony.com</a></p>
+                    <p style="color:#000;"><strong style="color:#000;">Website:</strong> <a href="https://www.inagroups.com" target="_blank" style="color:#000;">www.inagroups.com</a></p>
+                    <p style="color:#000;"><strong style="color:#000;">Address:</strong> Kerala, India</p>
                 </div>
                 <div class="social-links">
                     <a href="#" title="Facebook">📘</a>
@@ -830,6 +924,15 @@
                     <a href="#" title="Twitter">🐦</a>
                     <a href="#" title="LinkedIn">💼</a>
                 </div>
+            </div>
+
+            <div class="footer-section" style="margin-left:1cm;">
+                <h3 style="color:#000;">Key Links</h3>
+                <ul>
+                    <li><a href="/careers">Careers</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms of Service</a></li>
+                </ul>
             </div>
         </div>
 

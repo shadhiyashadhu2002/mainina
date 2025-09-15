@@ -88,28 +88,7 @@
         .nav-menu-container {
             display: flex;
             align-items: center;
-            margin-left: 5cm; /* 5cm gap between logo and menu */
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .logo-text {
-            font-size: 2rem;
-            font-weight: 700;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .logo-tagline {
-            font-size: 0.9rem;
-            color: rgba(255, 255, 255, 0.9);
-            font-weight: 300;
-            margin-top: 2px;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            margin-left: 5cm;
         }
 
         .nav-menu {
@@ -210,7 +189,6 @@
             box-shadow: 0 10px 30px rgba(36, 21, 113, 0.6);
         }
 
-       
         .hero-bottom {
             position: relative;
             z-index: 3;
@@ -324,7 +302,7 @@
 
         .carousel-track {
             display: flex;
-            animation: slideLeft 15s infinite linear;
+            animation: slideLeft 20s infinite linear;
             gap: 2rem;
         }
 
@@ -333,7 +311,7 @@
                 transform: translateX(0);
             }
             100% {
-                transform: translateX(-100%);
+                transform: translateX(-50%);
             }
         }
 
@@ -389,15 +367,18 @@
             margin-bottom: 2rem;
         }
 
-        .service-card:nth-child(1) .service-icon { background: linear-gradient(135deg, #8b5a3c, #a0714d); }
-        .service-card:nth-child(2) .service-icon { background: linear-gradient(135deg, #2d7c47, #34a853); }
-        .service-card:nth-child(3) .service-icon { background: linear-gradient(135deg, #6b7280, #9ca3af); }
-        .service-card:nth-child(4) .service-icon { background: linear-gradient(135deg, #374151, #4b5563); }
-        .service-card:nth-child(5) .service-icon { background: linear-gradient(135deg, #4b5563, #6b7280); }
-        .service-card:nth-child(6) .service-icon { background: linear-gradient(135deg, #6b7280, #9ca3af); }
-        .service-card:nth-child(7) .service-icon { background: linear-gradient(135deg, #374151, #4b5563); }
-        .service-card:nth-child(8) .service-icon { background: linear-gradient(135deg, #6b7280, #9ca3af); }
-        .service-card:nth-child(9) .service-icon { background: linear-gradient(135deg, #374151, #4b5563); }
+        .service-card:nth-child(1) .service-icon { background: linear-gradient(135deg, #ff6b6b, #ee5a24); }
+        .service-card:nth-child(2) .service-icon { background: linear-gradient(135deg, #4ecdc4, #44a08d); }
+        .service-card:nth-child(3) .service-icon { background: linear-gradient(135deg, #feca57, #ff9ff3); }
+        .service-card:nth-child(4) .service-icon { background: linear-gradient(135deg, #667eea, #764ba2); }
+        .service-card:nth-child(5) .service-icon { background: linear-gradient(135deg, #f093fb, #f5576c); }
+        .service-card:nth-child(6) .service-icon { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+        .service-card:nth-child(7) .service-icon { background: linear-gradient(135deg, #ff6b6b, #ee5a24); }
+        .service-card:nth-child(8) .service-icon { background: linear-gradient(135deg, #4ecdc4, #44a08d); }
+        .service-card:nth-child(9) .service-icon { background: linear-gradient(135deg, #feca57, #ff9ff3); }
+        .service-card:nth-child(10) .service-icon { background: linear-gradient(135deg, #667eea, #764ba2); }
+        .service-card:nth-child(11) .service-icon { background: linear-gradient(135deg, #f093fb, #f5576c); }
+        .service-card:nth-child(12) .service-icon { background: linear-gradient(135deg, #4facfe, #00f2fe); }
 
         .service-title-card {
             font-size: 1.8rem;
@@ -434,12 +415,7 @@
             box-shadow: 0 5px 15px rgba(36, 21, 113, 0.3);
         }
 
-        
-        .carousel-track {
-            width: calc(350px * 18 + 2rem * 17);
-        }
-
-       
+        /* Footer */
         .footer {
             background: #1f2937;
             color: #9ca3af;
@@ -535,7 +511,6 @@
             text-decoration: none;
         }
 
-        
         .mobile-menu-toggle {
             display: none;
             flex-direction: column;
@@ -619,10 +594,6 @@
             .hero-subtitle {
                 font-size: 1.1rem;
             }
-            
-            .logo-text {
-                font-size: 1.5rem;
-            }
         }
 
         @media (max-width: 480px) {
@@ -649,12 +620,10 @@
     </style>
 </head>
 <body>
-   
     <section class="hero" id="home">
         <img src="/images/home.png" alt="Home" class="hero-image">
         <div class="hero-overlay"></div>
         
-    
         <div class="hero-nav">
             <div class="nav-container" style="width:100%; display:flex; align-items:center; justify-content:flex-end;">
                 <ul class="nav-menu" style="display:flex; align-items:center; margin:0; padding:0; gap:1.5rem;">
@@ -675,13 +644,11 @@
             </div>
         </div>
 
-      
         <div class="hero-content">
             <div class="hero-text">
             </div>
         </div>
 
-      
         <div class="hero-bottom">
             <div class="dots-indicator">
                 <div class="dot active"></div>
@@ -691,7 +658,6 @@
         </div>
     </section>
 
-   
     <section class="about-section" id="about">
         <div class="about-content">
             <p>INA Matrimony is a trusted online platform designed to help individuals and families find their perfect life partner with ease and comfort from their own homes.</p>
@@ -736,99 +702,213 @@
         </div>
     </section>
 
-   
     <section class="services-carousel-section" id="services">
         <div class="services-header">
             <h2>Our Services</h2>
         </div>
         <div class="carousel-container">
             <div class="carousel-track">
-                
-                <div class="service-card">
-                    <div class="service-icon">🤝</div>
-                    <h3 class="service-title-card">Waytonikah</h3>
-                    <p class="service-description-card">Your trusted platform for finding the perfect life partner with comprehensive matchmaking services.</p>
-                    <button class="service-btn">Learn More</button>
-                </div>
+                <!-- Main Services -->
                 <div class="service-card">
                     <div class="service-icon">💕</div>
-                    <h3 class="service-title-card">Kerala Nikah</h3>
-                    <p class="service-description-card">Connecting hearts across Kerala with traditional values and modern technology.</p>
-                    <button class="service-btn">Learn More</button>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">💒</div>
-                    <h3 class="service-title-card">Kerala Marriage</h3>
-                    <p class="service-description-card">Specialized matrimonial services for Kerala community with personalized approach.</p>
-                    <button class="service-btn">Learn More</button>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🌟</div>
-                    <h3 class="service-title-card">Ezhava Marriage</h3>
-                    <p class="service-description-card">Dedicated platform for Ezhava community matrimonial services and connections.</p>
-                    <button class="service-btn">Learn More</button>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">💫</div>
-                    <h3 class="service-title-card">Thiyya Marriage</h3>
-                    <p class="service-description-card">Exclusive matrimonial services for Thiyya community with verified profiles.</p>
-                    <button class="service-btn">Learn More</button>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">👑</div>
-                    <h3 class="service-title-card">Royal Marriage</h3>
-                    <p class="service-description-card">Premium matrimonial services for those seeking royal connections and matches.</p>
-                    <button class="service-btn">Learn More</button>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">💙</div>
-                    <h3 class="service-title-card">ZAWJ</h3>
-                    <p class="service-description-card">Islamic matrimonial platform connecting Muslim singles worldwide.</p>
-                    <button class="service-btn">Learn More</button>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">👗</div>
-                    <h3 class="service-title-card">Masho</h3>
-                    <p class="service-description-card">Premium fashion destination for Muslim women with modest and modern collections.</p>
+                    <h3 class="service-title-card">INA Matrimony</h3>
+                    <p class="service-description-card">Find your perfect life partner with our trusted matrimonial services and verified profiles.</p>
                     <button class="service-btn">Learn More</button>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🎉</div>
-                    <h3 class="service-title-card">KOODE</h3>
-                    <p class="service-description-card">Complete wedding planning and event management services for your special day.</p>
+                    <h3 class="service-title-card">Event Planning</h3>
+                    <p class="service-description-card">Transform your dreams into reality with expert wedding and event planning services.</p>
                     <button class="service-btn">Learn More</button>
                 </div>
-                
-                
+                <div class="service-card">
+                    <div class="service-icon">🍽️</div>
+                    <h3 class="service-title-card">Food Services</h3>
+                    <p class="service-description-card">Delight your guests with exceptional catering and multi-cuisine food services.</p>
+                    <button class="service-btn">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💬</div>
+                    <h3 class="service-title-card">Consultation</h3>
+                    <p class="service-description-card">Get expert guidance and personalized consultation for matrimonial and event needs.</p>
+                    <button class="service-btn">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <h3 class="service-title-card">Event Coordination</h3>
+                    <p class="service-description-card">Seamless event coordination ensuring everything runs perfectly on your special day.</p>
+                    <button class="service-btn">Learn More</button>
+                </div>
                 <div class="service-card">
                     <div class="service-icon">🤝</div>
-                    <h3 class="service-title-card">Waytonikah</h3>
-                    <p class="service-description-card">Your trusted platform for finding the perfect life partner with comprehensive matchmaking services.</p>
+                    <h3 class="service-title-card">24/7 Support</h3>
+                    <p class="service-description-card">Round-the-clock customer support with multilingual assistance and quick response times.</p>
                     <button class="service-btn">Learn More</button>
                 </div>
+                
+                <!-- Duplicate services for infinite scroll -->
                 <div class="service-card">
                     <div class="service-icon">💕</div>
-                    <h3 class="service-title-card">Kerala Nikah</h3>
-                    <p class="service-description-card">Connecting hearts across Kerala with traditional values and modern technology.</p>
+                    <h3 class="service-title-card">INA Matrimony</h3>
+                    <p class="service-description-card">Find your perfect life partner with our trusted matrimonial services and verified profiles.</p>
                     <button class="service-btn">Learn More</button>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">💒</div>
-                    <h3 class="service-title-card">Kerala Marriage</h3>
-                    <p class="service-description-card">Specialized matrimonial services for Kerala community with personalized approach.</p>
+                    <div class="service-icon">🎉</div>
+                    <h3 class="service-title-card">Event Planning</h3>
+                    <p class="service-description-card">Transform your dreams into reality with expert wedding and event planning services.</p>
                     <button class="service-btn">Learn More</button>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🌟</div>
-                    <h3 class="service-title-card">Ezhava Marriage</h3>
-                    <p class="service-description-card">Dedicated platform for Ezhava community matrimonial services and connections.</p>
+                    <div class="service-icon">🍽️</div>
+                    <h3 class="service-title-card">Food Services</h3>
+                    <p class="service-description-card">Delight your guests with exceptional catering and multi-cuisine food services.</p>
                     <button class="service-btn">Learn More</button>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">💫</div>
-                    <h3 class="service-title-card">Thiyya Marriage</h3>
-                    <p class="service-description-card">Exclusive matrimonial services for Thiyya community with verified profiles.</p>
+                    <div class="service-icon">💬</div>
+                    <h3 class="service-title-card">Consultation</h3>
+                    <p class="service-description-card">Get expert guidance and personalized consultation for matrimonial and event needs.</p>
                     <button class="service-btn">Learn More</button>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">
+                    <div class="service-icon">📋</div>
+                    <h3 class="service-title-card">Event Coordination</h3>
+                    <p class="service-description-card">Seamless event coordination ensuring everything runs perfectly on your special day.</p>
+                    <button class="service-btn">Learn More</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🤝</div>
+                    <h3 class="service-title-card">24/7 Support</h3>
+                    <p class="service-description-card">Round-the-clock customer support with multilingual assistance and quick response times.</p>
+                    <button class="service-btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Company</h3>
+                <div class="company-info">
+                    <p><strong>INA Group</strong></p>
+                    <p>Connecting hearts, creating moments</p>
+                    <p>Your trusted partner for matrimonial services, event planning, and more.</p>
+                </div>
+                <ul>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/careers">Careers</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="/services">INA Matrimony</a></li>
+                    <li><a href="/services">Event Planning</a></li>
+                    <li><a href="/services">Food Services</a></li>
+                    <li><a href="/services">Consultation</a></li>
+                    <li><a href="/services">Event Coordination</a></li>
+                    <li><a href="/services">24/7 Support</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <div class="contact-info">
+                    <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+                    <p><strong>Email:</strong> info@inagroup.com</p>
+                    <p><strong>Address:</strong> Kerala, India</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" title="Facebook">📘</a>
+                    <a href="#" title="Instagram">📷</a>
+                    <a href="#" title="Twitter">🐦</a>
+                    <a href="#" title="LinkedIn">💼</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 INA Group. All rights reserved. | <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Parallax effect for hero image
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const heroImage = document.querySelector('.hero-image');
+            if (heroImage) {
+                heroImage.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+
+        // Animate sections on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    sectionObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Set initial state and observe sections
+        document.querySelectorAll('.about-section, .services-carousel-section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'all 0.6s ease';
+            sectionObserver.observe(section);
+        });
+
+        // Service button interactions
+        document.querySelectorAll('.service-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const serviceTitle = this.closest('.service-card').querySelector('.service-title-card').textContent;
+                alert(`Learn more about ${serviceTitle} - Contact us for detailed information!`);
+            });
+        });
+
+        // Dots indicator functionality
+        const dots = document.querySelectorAll('.dot');
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', function() {
+                dots.forEach(d => d.classList.remove('active'));
+                this.classList.add('active');
+                // Add slide functionality here if multiple hero images
+            });
+        });
+    </script>
+</body>
+</html>

@@ -723,7 +723,7 @@
             </div>
         </div>
 
-        <!-- Hero Content -->
+        <!-- Hero Content -->\
         <div class="hero-content">
             <div class="hero-text">
 

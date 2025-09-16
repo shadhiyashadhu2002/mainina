@@ -766,38 +766,21 @@
         </div>
 
         <div class="service-section">
-            <h2 class="service-title" style="font-weight:900;">Wedding Planners</h2>
-            <p class="service-description">INA is one of India's trusted wedding planning platforms, designed to bring together everything you need for a perfect celebration. From venues to photographers, caterers to decorators, we connect you with reliable vendors who make your special day unforgettable.</p>
-            <p class="service-description">We simplify the wedding journey by offering easy-to-use tools, expert resources, and a wide vendor directory, all in one place. Couples can discover, compare, and book professionals with confidence—anytime, anywhere.</p>
-            <p class="service-description">Our goal is to make wedding planning stress-free and enjoyable, so you can focus on cherishing the moments that truly matter. With thousands of verified listings and genuine reviews, INA ensures every couple finds the right services to match their vision and budget.</p>
+            <h2 class="service-title" style="font-weight:900;color:#000;">Event Planner</h2>
+            <p class="service-description">INA Event Planner is one of India’s trusted platforms for creating unforgettable celebrations. Whether it’s weddings, engagements, corporate functions, or personal parties, we bring together everything you need in one place. From venues to decorators, photographers to entertainers, our wide network of reliable vendors ensures that your event is seamless and stress-free.</p>
+            <p class="service-description">We provide expert resources, easy-to-use planning tools, and genuine vendor reviews so you can book services with confidence. Our goal is to make event planning enjoyable, helping you focus on cherishing the special moments while we take care of the details.</p>
         </div>
 
         <div class="service-section">
-            <h2 class="service-title" style="font-weight:900;">Matrimony</h2>
-            <p class="service-description">At INA, our mission is to understand the unique preferences of singles and provide them with reliable and efficient matchmaking solutions. With a vast and regularly updated database, we strive to make the journey of finding a life partner simple, seamless, and stress-free. We are committed to offering flexible search options that ensure a smooth and satisfactory experience for every member.</p>
-            
-            <div class="service-features">
-                <div class="feature-item">
-                    <span class="feature-icon">✓</span>
-                    <span>Your privacy and security are our top priorities. All personal information is kept safe, and no other member can access your details unless you choose to make them public. We also give you complete control over your account, empowering you to search, filter, and connect using tools designed to save time while delivering quick and meaningful results.</span>
-                </div>
-                <div class="feature-item">
-                    <span class="feature-icon">✓</span>
-                    <span> From the very beginning, INA is with you every step of the way. Our platform connects members across a wide range of communities, including Sunni, Shia, Brahmin, Nair, Parsi, Rajput, and many more—helping you meet the right partner who matches your values, lifestyle, and dreams.</span>
-                </div>
-            </div>
+            <h2 class="service-title" style="font-weight:900;color:#000;">Food Services</h2>
+            <p class="service-description">At INA, we believe that food is the heart of every celebration. That’s why our Food Services division connects you with the finest caterers and culinary experts to make your occasions truly memorable. Whether you’re planning a wedding feast, corporate lunch, or private gathering, we offer tailored food solutions to match your taste, style, and budget.</p>
         </div>
 
         <div class="service-section">
-            <h2 class="service-title" style="font-weight:900;">Fashion</h2>
-            <p class="service-description">Masho.com is one of the best online fashion destination for Muslim women that brings something fresh, modest and modern to the table. We offer Islamic Abayas, Hijabs, Kaftans, Niqabs and a wide range of Islamic accessories at an affordable price. With the Masho app, you can pick your favorite, get quick delivery, early sales, exciting deals and promotions, and other exclusive rewards on all your purchases. Download the Masho app for Android or iOS today and indulge in an amazing shopping experience!!!</p>
-            <p class="service-description">Another reason why Masho is considered one of the best online shopping stores is because it provides complete ease when you shop. Easy to pick filters, brands, prices, etc. give you the option to pick the best via a user-friendly interface. Size charts, product features, and high-resolution photos all assist you in making the best buying decisions. You can also choose your payment method, whether it's by card or cash-on-delivery. As a buyer, the 30-day return policy provides you greater leverage.</p>
-            <p class="service-description">Enjoy the convenience of shopping from the comfort of your own home or office. Shop for friends, family, and loved ones, and avail of our gift services on special occasions.</p>
-        </div>
-
-        <div class="service-section">
-            <h2 class="service-title" style="font-weight:900;">Mobile apps</h2>
-            <p class="service-description">Stay connected anywhere, anytime...!!! Look up matrimonial prospects, shop for your favorite hijab, or pick the best photographer for your wedding with respective mobile apps available for both iOS and Android</p>
+            <h2 class="service-title" style="font-weight:900;color:#000;">Fashion</h2>
+            <p class="service-description">INA Fashion is your destination for stylish, modest, and contemporary clothing for all occasions. We bring together carefully curated collections including ethnic wear, party wear, bridal attire, and accessories that blend tradition with modern trends.</p>
+            <p class="service-description">Our platform makes fashion shopping easy with clear filters, size guides, and high-quality images to help you make the right choices. With doorstep delivery, secure payments, seasonal offers, and a customer-friendly return policy, INA Fashion ensures a hassle-free shopping experience.</p>
+            <p class="service-description">Shop for yourself, your family, or gift loved ones with confidence — because at INA Fashion, elegance meets convenience.</p>
         </div>
     </section>
 
